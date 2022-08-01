@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<persistence xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_2.xsd"
+             version="2.2">
+    <persistence-unit name="default">
+
+        <class>entity.AccountlibraryandUserEntity</class>
+        <class>entity.AddresslibraryEntity</class>
+        <class>entity.AddressuserEntity</class>
+        <class>entity.BookEntity</class>
+        <class>entity.HasEntity</class>
+        <class>entity.LibraryEntity</class>
+        <class>entity.NamereaderEntity</class>
+        <class>entity.PenaltyEntity</class>
+        <class>entity.PublisherEntity</class>
+        <class>entity.ReaderEntity</class>
+        <class>entity.ReservationEntity</class>
+        <class>entity.ReserveEntity</class>
+        <class>entity.StaffEntity</class>
+        <class>entity.StudentEntity</class>
+        <class>entity.TeacherEntity</class>
+        <properties>
+            <property name="hibernate.connection.url" value="jdbc:postgresql://slon.felk.cvut.cz:5432/remelvic"/>
+            <property name="hibernate.connection.driver_class" value="org.postgresql.Driver"/>
+            <property name="hibernate.connection.username" value="remelvic"/>
+            <property name="hibernate.connection.password" value="remelvic_DBS212"/>
+        </properties>
+    </persistence-unit>
+</persistence>
